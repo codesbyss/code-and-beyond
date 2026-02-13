@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced CSS</title>
+    <style>
+        html,*{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body{
+          /* background-image: linear-gradient(red,green,yellow);*/
+       /*  background-image:linear-gradient(red ,green ,yellow);*/
+        /*  background-image: radial-gradient(white,red,blue);*/
+          background-image: conic-gradient(red,blue,yellow);
+            
+
+        }
+        div{
+            width: 400px;
+            height: 500px;
+            background-color: crimson;
+            overflow:auto;
+            border: 10px solid #3412cf;
+            padding: 20px;
+           /* opacity: 0.5;*/
+        }
+        p{
+            /*border:10px dashed #ccc;*/
+           /* border:inherit;*/
+            margin: 10px;
+            border: 10px solid transparent;
+            border-image: url(border.png)70 stretch;
+        }
+        a:hover{
+        cursor:move;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+             Exercitationem nemo officia incidunt tempore atque. 
+             Voluptatem id eveniet deserunt, perferendis assumenda ipsa animi 
+              amet molestias sunt recusandae ut sequi qui explicabo!
+        </p>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+             Rerum quo natus temporibus, facere eveniet quas numquam quasi placeat dolor vitae,
+              aperiam reprehenderit nobis odit, cumque distinctio doloremque illum officiis iste!
+        </p>
+    </div>
+    
+</body>
+</html>

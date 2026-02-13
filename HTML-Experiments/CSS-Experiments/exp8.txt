@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Student Profile Card — Box Layout</title>
+  <style>
+    :root{
+      --bg:#f4f7fb;
+      --card:#ffffff;
+      --muted:#6b7280;
+      --accent:#2563eb;
+      --radius:14px;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+
+    html,body{height:100%;margin:0;background:var(--bg);color:#0f172a}
+    .wrap{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:32px}
+
+    /* Card container as a box */
+    .card{
+      width:350px;
+      background:var(--card);
+      border-radius:var(--radius);
+      box-shadow:0 8px 20px rgba(0,0,0,0.1);
+      padding:20px;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      text-align:center;
+      gap:16px;
+    }
+
+    .avatar{
+      width:100px;
+      height:100px;
+      border-radius:50%;
+      background:linear-gradient(135deg,var(--accent),#7c3aed);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:white;
+      font-size:32px;
+      font-weight:700;
+    }
+
+    .name{font-size:20px;font-weight:700;margin-top:8px}
+    .meta{font-size:14px;color:var(--muted)}
+    .desc{font-size:13px;color:#334155;margin-top:8px;line-height:1.4}
+
+    .btn{padding:10px 16px;border:none;border-radius:10px;font-weight:600;cursor:pointer;margin-top:12px}
+    .btn-primary{background:var(--accent);color:white}
+    .btn-outline{background:transparent;border:1px solid #cbd5e1;color:#0f172a}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <div class="avatar">SS</div>
+      <div class="name">Soumya Singh</div>
+      <div class="meta">B.Tech — 1st Year | Computer Science</div>
+      <div class="meta">Interests: Web Dev • DSA • Design</div>
+      <div class="desc">Passionate about learning and exploring new technologies, I strive to build creative solutions that combine logic and design. I value growth, perseverance, and meaningful collaboration.</div>
+
+      <button class="btn btn-primary">View Portfolio</button>
+      <button class="btn btn-outline">Contact</button>
+      </div>
+    </body>
+    </html>
